@@ -47,7 +47,7 @@ public class SecurityConfig {
 						.requestMatchers("/user/**").hasRole("USER")
 						.requestMatchers("/admin/**").hasRole("ADMIN")
 						.anyRequest().authenticated())
-				.httpBasic(Customizer.withDefaults());
-		return http.build();
+                .formLogin(Customizer.withDefaults());
+        return http.build();
 	}
 }
