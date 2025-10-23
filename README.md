@@ -44,13 +44,14 @@ Endpoints:
 Each endpoint has their own  “@RestController” which is composed of “@Controller” and “@ResponseBody”, that is a RESTful web service. For instance, in the AdminController class, return “admin endpoint” is returned as a raw HTTP response body. The “/” endpoint occurs by default after a successful login, in which the user can know who and what role they are. These above aforementioned tactics satisfy the security quality attribute.
 The following documentation showcases the validation and verifcation of an actor's identity..
 
+## Authentication
 ### Sequence diagram:
 ![Alt text](authenticate_seq.png)
 
 ### Acitviity diagram:
 ![Alt text](authenticate_act.png)
 
-# Authorization
+## Authorization
 Assumptions: The user is already logged in or a public user, the only concern here is what they are allowed to access. Therefore, the diagrams will not include the act of logging in.
 
 ### Sequence Diagram:
